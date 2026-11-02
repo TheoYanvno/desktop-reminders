@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
+  <title>Desktop Reminders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <p id="date" class="date"></p>
+    <p id="clock" class="clock">--:--</p>
+
+    <form id="reminderForm" class="reminder">
+      <h2>Remind me</h2>
+      <label for="text">About</label>
+      <input id="text" type="text" maxlength="120" placeholder="Stretch, drink water…">
+      <label for="minutes">In how many minutes?</label>
+      <input id="minutes" type="number" min="1" max="240" value="10">
+      <button type="submit">Set reminder</button>
+    </form>
+
+    <p id="message" class="message" aria-live="polite"></p>
+    <ul id="list" class="list"></ul>
+    <p id="versions" class="versions"></p>
+  </main>
+  <script src="renderer.js"></script>
+</body>
+</html>

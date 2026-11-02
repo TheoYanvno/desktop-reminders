@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.app {
+  padding: 24px;
+}
+
+.date {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.clock {
+  margin: 4px 0 20px;
+  font-size: 3rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.reminder {
+  display: grid;
+  gap: 6px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #1e293b;
+}
+
+.reminder h2 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+
+.reminder input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: inherit;
+}
+
+.reminder button {
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.message {
+  min-height: 1.5em;
+}
+
+.list {
+  padding-left: 1.2em;
+  color: #cbd5e1;
+}
+
+.list .done {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+.versions {
+  font-size: .75rem;
+  color: #64748b;
+}
